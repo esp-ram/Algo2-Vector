@@ -11,24 +11,21 @@ bool vector_obtener(vector_t* vector, size_t pos, int* valor){
     if (pos < vector -> tam){
         *valor = vector -> datos [pos];
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
 
 bool vector_guardar(vector_t* vector, size_t pos, int valor){
     if ((pos < vector -> tam) && (vector -> tam != 0)){
         vector -> datos [pos] = valor;
         return true;
-    } else{
-        return false;
     }
+    return false;
 }
 
 size_t vector_largo(vector_t* vector){
     return (vector -> tam);
 }
-
 
 
 // Funciones implementadas por la catedra.
